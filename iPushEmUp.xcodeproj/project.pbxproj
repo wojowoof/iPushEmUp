@@ -13,6 +13,8 @@
 		F4A72512211E7D170055AD07 /* iPushEmUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4A72510211E7D170055AD07 /* iPushEmUp.xcdatamodeld */; };
 		F4A72514211E7D180055AD07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A72513211E7D180055AD07 /* Assets.xcassets */; };
 		F4A72517211E7D180055AD07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A72515211E7D180055AD07 /* LaunchScreen.storyboard */; };
+		F4A72525211E9F960055AD07 /* SessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A72524211E9F960055AD07 /* SessTableViewCell.swift */; };
+		F4A72529211EA7B20055AD07 /* addSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A72528211EA7B20055AD07 /* addSessionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F4A72513211E7D180055AD07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A72516211E7D180055AD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A72518211E7D180055AD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A72524211E9F960055AD07 /* SessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessTableViewCell.swift; sourceTree = "<group>"; };
+		F4A72528211EA7B20055AD07 /* addSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,12 @@
 			children = (
 				F4A72509211E7D170055AD07 /* AppDelegate.swift */,
 				F4A7250B211E7D170055AD07 /* ViewController.swift */,
+				F4A72524211E9F960055AD07 /* SessTableViewCell.swift */,
 				F4A7250D211E7D170055AD07 /* Main.storyboard */,
 				F4A72513211E7D180055AD07 /* Assets.xcassets */,
 				F4A72515211E7D180055AD07 /* LaunchScreen.storyboard */,
 				F4A72518211E7D180055AD07 /* Info.plist */,
+				F4A72528211EA7B20055AD07 /* addSessionViewController.swift */,
 				F4A72510211E7D170055AD07 /* iPushEmUp.xcdatamodeld */,
 			);
 			path = iPushEmUp;
@@ -141,6 +147,8 @@
 				F4A7250C211E7D170055AD07 /* ViewController.swift in Sources */,
 				F4A7250A211E7D170055AD07 /* AppDelegate.swift in Sources */,
 				F4A72512211E7D170055AD07 /* iPushEmUp.xcdatamodeld in Sources */,
+				F4A72529211EA7B20055AD07 /* addSessionViewController.swift in Sources */,
+				F4A72525211E9F960055AD07 /* SessTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
