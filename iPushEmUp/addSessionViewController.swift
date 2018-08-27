@@ -23,10 +23,13 @@ class addSessionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let dtnow = Date()
+        datePicker.date = dtnow
+        setDateTo(date: dtnow)
+        /*
         let df = DateFormatter()
         df.dateFormat = "MM/dd/yy hh:mm"
         dateField.text = df.string(from:dtnow)
-        datePicker.date = dtnow
+         */
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +40,7 @@ class addSessionViewController: UIViewController {
     @IBAction func save(sender: UIBarButtonItem) {
         guard let mOC = moc else { return }
         let sess = Session(context: mOC)
-        sess.dateTime = Date()
+        sess.dateTime = datePicker.date
         sess.count = Int64(countField.text!)!
         do {
             try mOC.save()
@@ -45,6 +48,16 @@ class addSessionViewController: UIViewController {
             print("Failed to persist changes: \(error)")
         }
         _ = navigationController?.popViewController(animated: true)
+    }
+
+    private func setDateTo(date: Date) {
+        let df = DateFormatter()
+        df.dateFormat = "MM/dd/yy hh:mm"
+        dateField.text = df.string(from: date)
+    }
+
+    @IBAction func datePickerChanged(_ sender: Any) {
+        setDateTo(date: datePicker.date as Date)
     }
 
     /*

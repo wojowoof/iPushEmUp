@@ -15,7 +15,35 @@
 		F4A72517211E7D180055AD07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A72515211E7D180055AD07 /* LaunchScreen.storyboard */; };
 		F4A72525211E9F960055AD07 /* SessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A72524211E9F960055AD07 /* SessTableViewCell.swift */; };
 		F4A72529211EA7B20055AD07 /* addSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A72528211EA7B20055AD07 /* addSessionViewController.swift */; };
+		F4A725312130CCC10055AD07 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A725302130CCC10055AD07 /* NotificationCenter.framework */; };
+		F4A725342130CCC10055AD07 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A725332130CCC10055AD07 /* TodayViewController.swift */; };
+		F4A725372130CCC10055AD07 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A725352130CCC10055AD07 /* MainInterface.storyboard */; };
+		F4A7253B2130CCC10055AD07 /* iPushEmUp WIdget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4A7252E2130CCC10055AD07 /* iPushEmUp WIdget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4A725392130CCC10055AD07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4A724FE211E7D170055AD07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4A7252D2130CCC10055AD07;
+			remoteInfo = "iPushEmUp WIdget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4A7253F2130CCC10055AD07 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F4A7253B2130CCC10055AD07 /* iPushEmUp WIdget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F4A72506211E7D170055AD07 /* iPushEmUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPushEmUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +56,11 @@
 		F4A72518211E7D180055AD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A72524211E9F960055AD07 /* SessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessTableViewCell.swift; sourceTree = "<group>"; };
 		F4A72528211EA7B20055AD07 /* addSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSessionViewController.swift; sourceTree = "<group>"; };
+		F4A7252E2130CCC10055AD07 /* iPushEmUp WIdget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iPushEmUp WIdget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A725302130CCC10055AD07 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F4A725332130CCC10055AD07 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F4A725362130CCC10055AD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F4A725382130CCC10055AD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +71,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4A7252B2130CCC10055AD07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A725312130CCC10055AD07 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -45,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				F4A72508211E7D170055AD07 /* iPushEmUp */,
+				F4A725322130CCC10055AD07 /* iPushEmUp WIdget */,
+				F4A7252F2130CCC10055AD07 /* Frameworks */,
 				F4A72507211E7D170055AD07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F4A72506211E7D170055AD07 /* iPushEmUp.app */,
+				F4A7252E2130CCC10055AD07 /* iPushEmUp WIdget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +117,24 @@
 			path = iPushEmUp;
 			sourceTree = "<group>";
 		};
+		F4A7252F2130CCC10055AD07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4A725302130CCC10055AD07 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A725322130CCC10055AD07 /* iPushEmUp WIdget */ = {
+			isa = PBXGroup;
+			children = (
+				F4A725332130CCC10055AD07 /* TodayViewController.swift */,
+				F4A725352130CCC10055AD07 /* MainInterface.storyboard */,
+				F4A725382130CCC10055AD07 /* Info.plist */,
+			);
+			path = "iPushEmUp WIdget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +145,34 @@
 				F4A72502211E7D170055AD07 /* Sources */,
 				F4A72503211E7D170055AD07 /* Frameworks */,
 				F4A72504211E7D170055AD07 /* Resources */,
+				F4A7253F2130CCC10055AD07 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4A7253A2130CCC10055AD07 /* PBXTargetDependency */,
 			);
 			name = iPushEmUp;
 			productName = iPushEmUp;
 			productReference = F4A72506211E7D170055AD07 /* iPushEmUp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F4A7252D2130CCC10055AD07 /* iPushEmUp WIdget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4A7253C2130CCC10055AD07 /* Build configuration list for PBXNativeTarget "iPushEmUp WIdget" */;
+			buildPhases = (
+				F4A7252A2130CCC10055AD07 /* Sources */,
+				F4A7252B2130CCC10055AD07 /* Frameworks */,
+				F4A7252C2130CCC10055AD07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iPushEmUp WIdget";
+			productName = "iPushEmUp WIdget";
+			productReference = F4A7252E2130CCC10055AD07 /* iPushEmUp WIdget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +185,9 @@
 				ORGANIZATIONNAME = "Jack Woychowski";
 				TargetAttributes = {
 					F4A72505211E7D170055AD07 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F4A7252D2130CCC10055AD07 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -122,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				F4A72505211E7D170055AD07 /* iPushEmUp */,
+				F4A7252D2130CCC10055AD07 /* iPushEmUp WIdget */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +219,14 @@
 				F4A72517211E7D180055AD07 /* LaunchScreen.storyboard in Resources */,
 				F4A72514211E7D180055AD07 /* Assets.xcassets in Resources */,
 				F4A7250F211E7D170055AD07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A7252C2130CCC10055AD07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A725372130CCC10055AD07 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +245,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4A7252A2130CCC10055AD07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A725342130CCC10055AD07 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4A7253A2130CCC10055AD07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4A7252D2130CCC10055AD07 /* iPushEmUp WIdget */;
+			targetProxy = F4A725392130CCC10055AD07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4A7250D211E7D170055AD07 /* Main.storyboard */ = {
@@ -169,6 +278,14 @@
 				F4A72516211E7D180055AD07 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F4A725352130CCC10055AD07 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A725362130CCC10055AD07 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,6 +408,7 @@
 		F4A7251C211E7D180055AD07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5498FS427;
@@ -309,6 +427,7 @@
 		F4A7251D211E7D180055AD07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5498FS427;
@@ -319,6 +438,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wojones.iPushEmUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4A7253D2130CCC10055AD07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5498FS427;
+				INFOPLIST_FILE = "iPushEmUp WIdget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wojones.iPushEmUp.iPushEmUp-WIdget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4A7253E2130CCC10055AD07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5498FS427;
+				INFOPLIST_FILE = "iPushEmUp WIdget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wojones.iPushEmUp.iPushEmUp-WIdget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,6 +498,15 @@
 			buildConfigurations = (
 				F4A7251C211E7D180055AD07 /* Debug */,
 				F4A7251D211E7D180055AD07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4A7253C2130CCC10055AD07 /* Build configuration list for PBXNativeTarget "iPushEmUp WIdget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A7253D2130CCC10055AD07 /* Debug */,
+				F4A7253E2130CCC10055AD07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

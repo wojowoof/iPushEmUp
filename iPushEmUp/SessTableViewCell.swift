@@ -19,6 +19,7 @@ class SessTableViewCell: UITableViewCell {
 
     // MARK: - Initialization
     override func awakeFromNib() {
+        
         super.awakeFromNib()
         // Initialization code
     }

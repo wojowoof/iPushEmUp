@@ -18,17 +18,6 @@ class ViewController: UIViewController {
 
     private let persCont = NSPersistentContainer(name: "iPushEmUp")
 
-    /*
- lazy var mOC: NSManagedObjectContext = {
-        guard let appD = UIApplication.shared.delegate as? AppDelegate else {
-            fatalError("No appDelegate?")
-        }
-        let moc = appD.persistentContainer.viewContext
-        print("Moc: \(moc)")
-        return moc
-    }()
- */
-
     fileprivate lazy var fetchedResCtrl: NSFetchedResultsController<Session> = {
         let fR: NSFetchRequest<Session> = Session.fetchRequest()
         fR.sortDescriptors = [NSSortDescriptor(key: "dateTime", ascending: false)]
@@ -39,9 +28,6 @@ class ViewController: UIViewController {
         print("Frc: \(frC)")
         return frC
     }()
-
-    //var names: [String] = []
-    /* var sessions: [Session] = [] */
 
     override func viewDidLoad() {
         super.viewDidLoad()
